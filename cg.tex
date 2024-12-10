@@ -1,0 +1,13 @@
+\input{preamble}
+
+\begin{document}
+
+\feynmandiagram [vertical=i2 to i1] {
+    i1 [particle=\Pg] -- [gluon] a [label=left:\hbox{\cg\quad}],
+    i2 [particle=\Pg] -- [gluon] a,
+    a -- [scalar, edge label=\PH] b [label=right:\quad\lHHH],
+    b -- [scalar] f1 [particle=\PH],
+    b -- [scalar] f2 [particle=\PH]
+};
+
+\end{document}

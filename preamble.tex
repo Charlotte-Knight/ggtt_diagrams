@@ -1,0 +1,24 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{tikz-feynman}
+\usepackage{standalone} % For creating separate PDFs for each preview
+
+\usepackage{mathpazo}
+\usepackage{helvet}
+\usepackage{titlesec}
+
+\newcommand{\Pg}{\ensuremath{\mathrm{g}}}
+\newcommand{\PH}{\ensuremath{\mathrm{H}}}
+\newcommand{\Pt}{\ensuremath{t}}
+\newcommand{\yt}{\ensuremath{y_\Pt}}
+\newcommand{\lHHH}{\ensuremath{\lambda_{\PH\PH\PH}}}
+\newcommand{\ctwo}{\ensuremath{c_2}}
+\newcommand{\ctwog}{\ensuremath{c_{2\Pg}}}
+\newcommand{\cg}{\ensuremath{c_\Pg}}
+\newcommand{\PX}{\ensuremath{\mathrm{X}}}
+\newcommand{\PY}{\ensuremath{\mathrm{Y}}}
+
+\tikzfeynmanset{
+ mydot/.style={shape=circle, as={}, draw, fill, inner sep=0pt, outer sep=0pt, minimum size=1mm},
+ every vertex/.style={mydot}
+}

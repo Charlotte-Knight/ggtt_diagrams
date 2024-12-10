@@ -1,0 +1,18 @@
+\input{preamble}
+
+\begin{document}
+
+\feynmandiagram [horizontal=a to c] {
+    i1 [particle=\Pg] -- [gluon] a [dot],
+    i2 [particle=\Pg] -- [gluon] b [dot],
+    a -- [anti fermion] b,
+    a -- [fermion] c [label=below:\hbox{\yt\quad\ }],
+    b -- [anti fermion] d [label=above:\hbox{\yt\quad\ }],
+    c -- [fermion] d,
+    c -- [scalar] f1 [particle=\PH],
+    d -- [scalar] f2 [particle=\PH],
+    i1 -- [opacity=0] i2,
+    f1 -- [opacity=0] f2,
+};
+
+\end{document}
